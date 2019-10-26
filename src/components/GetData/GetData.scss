@@ -1,0 +1,20 @@
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .cards{
+        display: flex;
+        padding: 6px;
+        // border: 1px solid black;
+        margin:8px;
+        width: 30%;
+        flex-flow: 1 1 0;
+        height:40%;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75)
+    }
+
+}
