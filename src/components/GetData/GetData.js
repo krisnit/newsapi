@@ -7,8 +7,17 @@ const GetData = (props) => {
     const totalHits= hits.map(a=>{
         console.log(a)
         return <div className="cards">
-            <p>{a.title}</p>
-            <a href={a.url}>More</a>
+                <span>
+                    <a href={a.url}>{a.title}</a>
+                </span>
+            <div className="cards_details">
+                <span>Author:{a.author}</span>
+                <span>Points:{a.points}</span>
+                <span>Comments:{a.num_comments}</span>
+            </div>
+            <div>
+                
+            </div>            
         </div>
     })
 
